@@ -349,7 +349,7 @@
         settingsPanel.className = 'proxy-settings';
         settingsPanel.innerHTML = `
             <div class="settings-header">
-                <div class="settings-title">GitHub Proxy Redirector | GitHub 代理自动选择</div>
+                <div class="settings-title">GitHub 代理选择</div>
                 <button class="close-btn">×</button>
             </div>
             <div style="margin-bottom: 10px;">
