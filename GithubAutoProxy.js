@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         GitHub Proxy Redirector Pro
+// @name         GitHub Proxy Redirector | GitHub 代理自动选择
 // @namespace    https://github.com/DingerBtn/GithubAutoProxy
 // @version      2.0
 // @description  自动代理GitHub链接，支持自定义代理服务器和域名
@@ -20,6 +20,7 @@
 // @icon         https://github.githubassets.com/favicons/favicon.png
 // @thanks       https://github.akams.cn/
 // ==/UserScript==
+
 
 
 (function() {
@@ -175,6 +176,8 @@
     // ========== 设置界面 ========== 
     function createSettingsUI() {
         GM_addStyle(`
+            /* 脚本名称样式 */
+            .settings-title { font-size: 18px; font-weight: 600; }
             .manage-domains-btn {
                 background: #0366d6;
                 color: #fff;
@@ -346,7 +349,7 @@
         settingsPanel.className = 'proxy-settings';
         settingsPanel.innerHTML = `
             <div class="settings-header">
-                <div class="settings-title">GitHub 代理设置</div>
+                <div class="settings-title">GitHub Proxy Redirector | GitHub 代理自动选择</div>
                 <button class="close-btn">×</button>
             </div>
             <div style="margin-bottom: 10px;">
